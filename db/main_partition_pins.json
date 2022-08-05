@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out_clk_positive",
+					"strict" : false
+				},
+				{
+					"name" : "out_clk_negative",
+					"strict" : false
+				},
+				{
+					"name" : "D_out",
+					"strict" : false
+				},
+				{
+					"name" : "clk_in",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "start_button",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

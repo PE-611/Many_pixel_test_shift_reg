@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_in'
+Slack : -4.121
+TNS   : -154.339
+
+Type  : Slow 1200mV 85C Model Setup 'out_clk_positive~reg0'
+Slack : -1.661
+TNS   : -14.777
+
+Type  : Slow 1200mV 85C Model Hold 'clk_in'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'out_clk_positive~reg0'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'out_clk_positive~reg0'
+Slack : -0.273
+TNS   : -3.549
+
+Type  : Slow 1200mV 85C Model Removal 'out_clk_positive~reg0'
+Slack : 0.612
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -66.941
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'out_clk_positive~reg0'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 0C Model Setup 'clk_in'
+Slack : -3.740
+TNS   : -140.984
+
+Type  : Slow 1200mV 0C Model Setup 'out_clk_positive~reg0'
+Slack : -1.390
+TNS   : -12.086
+
+Type  : Slow 1200mV 0C Model Hold 'clk_in'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'out_clk_positive~reg0'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'out_clk_positive~reg0'
+Slack : -0.127
+TNS   : -1.651
+
+Type  : Slow 1200mV 0C Model Removal 'out_clk_positive~reg0'
+Slack : 0.553
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -66.941
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'out_clk_positive~reg0'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Fast 1200mV 0C Model Setup 'clk_in'
+Slack : -1.197
+TNS   : -41.665
+
+Type  : Fast 1200mV 0C Model Setup 'out_clk_positive~reg0'
+Slack : -0.157
+TNS   : -0.522
+
+Type  : Fast 1200mV 0C Model Hold 'clk_in'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'out_clk_positive~reg0'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'out_clk_positive~reg0'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'out_clk_positive~reg0'
+Slack : 0.220
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -48.498
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'out_clk_positive~reg0'
+Slack : -1.000
+TNS   : -13.000
+
+------------------------------------------------------------

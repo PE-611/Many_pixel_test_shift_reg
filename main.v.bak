@@ -1,0 +1,64 @@
+module main (input clk_in, start_button,
+
+	     output reg out_clk_positive, out_clk_negative,
+				 
+	     output reg Hold, Reset, D_out);
+				 
+
+reg [7:0] cnt_clk_positive;
+
+initial cnt_clk_positive <= 1'b0;
+initial out_clk_positive <= 1'b0;	
+initial out_clk_negative <= 1'b1;
+
+			 
+reg start_flg;
+initial start_flg <= 1'b0;
+	 
+				 
+				 
+always @(posedge clk_in) begin
+		
+
+	if (start_flg == 1'b1) begin
+		cnt_clk_positive <= cnt_clk_positive + 1'b1;
+	end
+	
+	if (cnt_clk_positive == 7'd100) begin
+		cnt_clk_positive <= 1'b0;
+		out_clk_positive <= ~out_clk_positive;
+		
+	end
+
+	if (out_clk_positive == 1'b1) begin
+		out_clk_negative <= 1'b1;
+	end
+	
+
+	if (out_clk_negative == 1'b1) begin
+		D_out <= 1'b0;
+	end
+	
+	if (start_button == 1'b1) begin
+		start_flg <= 1'b1;
+		D_out <= 1'b1;
+	end
+
+end
+
+reg [7:0] cnt_quantity_clk;
+initial cnt_quantity_clk <= 1'b0;
+ 
+always @(posedge out_clk_positive) begin
+	cnt_quantity_clk <= cnt_quantity_clk + 1'b1;
+	if (cnt_quantity_clk == 8'd10) begin
+		cnt_quantity_clk <= 1'b0;
+		start_flg <= 1'b0;
+	end
+end
+
+
+
+endmodule
+	
+

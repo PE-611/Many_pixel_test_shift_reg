@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at main.v(141): always construct contains both blocking and non-blocking assignments File: D:/Job/project_quartus/Many_pixel_test/main.v Line: 141
+Info (10281): Verilog HDL Declaration information at main.v(10): object "reset" differs only in case from object "Reset" in the same scope File: D:/Job/project_quartus/Many_pixel_test/main.v Line: 10

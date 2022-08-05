@@ -1,0 +1,9 @@
+
+State Machine - |main|state
+Name state.STOP state.REVERSE_CLK state.START_GENERATE state.D_enable state.START state.00000000 
+state.00000000 0 0 0 0 0 0 
+state.START 0 0 0 0 1 1 
+state.D_enable 0 0 0 1 0 1 
+state.START_GENERATE 0 0 1 0 0 1 
+state.REVERSE_CLK 0 1 0 0 0 1 
+state.STOP 1 0 0 0 0 1 

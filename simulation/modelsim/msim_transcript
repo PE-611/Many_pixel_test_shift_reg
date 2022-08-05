@@ -1,0 +1,77 @@
+# Reading pref.tcl
+# do main_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/Many_pixel_test {D:/Job/project_quartus/Many_pixel_test/main.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:54:29 on Aug 05,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Job/project_quartus/Many_pixel_test" D:/Job/project_quartus/Many_pixel_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 19:54:29 on Aug 05,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/Many_pixel_test/simulation/modelsim {D:/Job/project_quartus/Many_pixel_test/simulation/modelsim/main.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:54:29 on Aug 05,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Job/project_quartus/Many_pixel_test/simulation/modelsim" D:/Job/project_quartus/Many_pixel_test/simulation/modelsim/main.vt 
+# -- Compiling module main_vlg_tst
+# 
+# Top level modules:
+# 	main_vlg_tst
+# End time: 19:54:29 on Aug 05,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  main_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" main_vlg_tst 
+# Start time: 19:54:29 on Aug 05,2022
+# Loading work.main_vlg_tst
+# Loading work.main
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+add wave -position end  sim:/main_vlg_tst/i1/divider_clk
+add wave -position end  sim:/main_vlg_tst/i1/quantity_clk
+add wave -position end  sim:/main_vlg_tst/i1/nonoverlaped_time
+add wave -position end  sim:/main_vlg_tst/i1/IDLE
+add wave -position end  sim:/main_vlg_tst/i1/START
+add wave -position end  sim:/main_vlg_tst/i1/D_enable
+add wave -position end  sim:/main_vlg_tst/i1/START_GENERATE
+add wave -position end  sim:/main_vlg_tst/i1/REVERSE_CLK
+add wave -position end  sim:/main_vlg_tst/i1/STOP
+add wave -position end  sim:/main_vlg_tst/i1/clk_in
+add wave -position end  sim:/main_vlg_tst/i1/start_button
+add wave -position end  sim:/main_vlg_tst/i1/reset
+add wave -position end  sim:/main_vlg_tst/i1/out_clk_positive
+add wave -position end  sim:/main_vlg_tst/i1/out_clk_negative
+add wave -position end  sim:/main_vlg_tst/i1/Hold
+add wave -position end  sim:/main_vlg_tst/i1/Reset
+add wave -position end  sim:/main_vlg_tst/i1/D_out
+add wave -position end  sim:/main_vlg_tst/i1/state
+add wave -position end  sim:/main_vlg_tst/i1/next_state
+add wave -position end  sim:/main_vlg_tst/i1/process_flg
+add wave -position end  sim:/main_vlg_tst/i1/cnt
+add wave -position end  sim:/main_vlg_tst/i1/cnt_quantity_clk
+run
+restart -f
+run
+run
+run
+# Running testbench
+# End time: 19:55:35 on Aug 05,2022, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 0
