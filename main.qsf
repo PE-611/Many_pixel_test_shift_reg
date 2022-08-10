@@ -73,4 +73,10 @@ set_global_assignment -name EDA_TEST_BENCH_NAME Test_bench -section_id eda_simul
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Test_bench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME main_vlg_tst -section_id Test_bench
 set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/main.vt -section_id Test_bench
+set_location_assignment PIN_R8 -to clk_in -comment CLOCK_50
+set_location_assignment PIN_J15 -to start_button -comment KEY_0
+set_location_assignment PIN_E1 -to reset -comment KEY_1
+set_location_assignment PIN_D3 -to D_out -comment GPIO_00
+set_location_assignment PIN_A3 -to out_clk_negative -comment GPIO_03
+set_location_assignment PIN_B5 -to out_clk_positive -comment GPIO_07_PIN_B5
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -13,8 +13,8 @@ module main (input clk_in, start_button, reset,
 				 
 				 output reg Hold, Reset, D_out);
 
-parameter divider_clk = 1000;
-parameter quantity_clk = 3;
+parameter divider_clk = 50000;
+parameter quantity_clk = 10;
 parameter nonoverlaped_time = divider_clk / 3;
 
 reg [7:0] state;	

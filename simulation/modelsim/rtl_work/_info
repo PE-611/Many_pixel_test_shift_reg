@@ -10,14 +10,14 @@ z2
 cModel Technology
 Z0 dD:/Job/project_quartus/Many_pixel_test/simulation/modelsim
 vmain
-Z1 !s110 1659718469
+Z1 !s110 1660142485
 !i10b 1
 !s100 K[A:UPcCF9VT@H<9@NZ[j2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 Ia>0Dg6X6FbJYT>0mf6;<o3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1659718448
+w1660142445
 8D:/Job/project_quartus/Many_pixel_test/main.v
 FD:/Job/project_quartus/Many_pixel_test/main.v
 !i122 0
@@ -26,7 +26,7 @@ Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1659718469.000000
+Z5 !s108 1660142485.000000
 !s107 D:/Job/project_quartus/Many_pixel_test/main.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Job/project_quartus/Many_pixel_test|D:/Job/project_quartus/Many_pixel_test/main.v|
 !i113 1
